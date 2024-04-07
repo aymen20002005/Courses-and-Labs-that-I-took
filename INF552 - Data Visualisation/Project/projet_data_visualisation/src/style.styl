@@ -1,0 +1,122 @@
+/* Updated styles with changed colors and proportions */
+
+.chart__grid {
+  stroke: #4CAF50; /* Change color */
+  opacity: 0.3;
+}
+
+svg {
+  font: 12px sans-serif; /* Adjust font size */
+}
+
+.area {
+  fill: rgba(255, 100, 100, 0.5); /* Change color and opacity */
+  clip-path: url("#clip");
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #4CAF50; /* Change color */
+  shape-rendering: crispEdges;
+}
+
+.brush .extent {
+  stroke: #FFF; /* Change color */
+  fill-opacity: 0.125; /* Adjust opacity */
+  shape-rendering: crispEdges;
+}
+
+/* New */
+.chart {
+  text {
+    fill: #7F8FAF; /* Change color */
+  }
+
+  &__line {
+    fill: none;
+    stroke-width: 1.2px; /* Adjust stroke width */
+    clip-path: url("#clip");
+  }
+
+  &__price--focus {
+    stroke-width: 2px; /* Adjust stroke width */
+    stroke: #2980B9; /* Change color */
+  }
+
+  &__average--focus {
+    stroke-width: 2px; /* Adjust stroke width */
+    stroke: red; /* Change color */
+    opacity: 0.3;
+  }
+
+  &__overlay {
+    opacity: 0;
+    pointer-events: all;
+  }
+
+  &__tooltip--price {
+    fill: none;
+    stroke: red; /* Change color */
+  }
+
+  &__tooltip--average {
+    fill: none;
+    stroke: red; /* Change color */
+  }
+
+  &__bars {
+    fill: #99C5DF; /* Change color */
+    opacity: 1;
+  }
+
+  &__range-selection {
+    text {
+      cursor: pointer;
+      text-decoration: underline;
+      fill: #2980B9; /* Change color */
+    }
+  }
+}
+
+.chart__axis--context {
+  text {
+    fill: #7F8FAF; /* Change color */
+  }
+}
+
+.chart__axis--context .tick:nth-child(odd) {
+  display: none;
+}
+
+.chart__axis--context path,
+.chart__axis--context line {
+  display: none;
+}
+
+.chart__area {
+  fill: #E6F6FE; /* Change color */
+  stroke: #3587BC; /* Change color */
+}
+
+.extent {
+  fill: #3587BC; /* Change color */
+  fill-opacity: 0.3;
+}
+
+.y.axis {
+  .tick {
+    text {
+      text-anchor: start !important;
+      fill: #7F8FAF; /* Change color */
+    }
+
+    line {
+      display: none;
+    }
+  }
+
+  path {
+    display: none;
+  }
+}

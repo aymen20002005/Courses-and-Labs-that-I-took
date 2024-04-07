@@ -1,0 +1,173 @@
+/* Updated styles with changed colors and proportions */
+
+t.chart__grid {
+  stroke: #4CAF50; /* Change color */
+  opacity: 0.5; /* Adjust opacity */
+}
+
+svg {
+  font: 12px sans-serif; /* Adjust font size */
+}
+
+.area {
+  fill: rgba(255, 0, 0, 0.6); /* Change color and opacity */
+  clip-path: url("#clip");
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #4CAF50; /* Change color */
+  shape-rendering: crispEdges;
+}
+
+.brush .extent {
+  stroke: #000; /* Change color */
+  fill-opacity: 0.2; /* Adjust opacity */
+  shape-rendering: crispEdges;
+}
+
+.chart text {
+  fill: black; /* Change color */
+}
+
+.chart__line {
+  fill: none;
+  stroke-width: 2px; /* Adjust stroke width */
+  clip-path: url("#clip");
+}
+
+.chart__price--focus {
+  stroke-width: 3px; /* Adjust stroke width */
+  stroke: #2196F3; /* Change color */
+}
+
+.chart__average--focus {
+  stroke-width: 3px; /* Adjust stroke width */
+  stroke: red; /* Change color */
+  opacity: 0.5; /* Adjust opacity */
+}
+
+.chart__overlay {
+  opacity: 0.1; /* Adjust opacity */
+  pointer-events: all;
+}
+
+.chart__tooltip--price {
+  fill: none;
+  stroke: #FF5722; /* Change color */
+}
+
+.chart__tooltip--average {
+  fill: none;
+  stroke: #FFC107; /* Change color */
+}
+
+.chart__bars {
+  fill: #9C27B0; /* Change color */
+  opacity: 0.8; /* Adjust opacity */
+}
+
+.chart__range-selection text {
+  cursor: pointer;
+  text-decoration: underline;
+  fill: #E91E63; /* Change color */
+}
+
+.chart__axis--context text {
+  fill: #795548; /* Change color */
+}
+
+.chart__axis--context .tick:nth-child(odd) {
+  display: none;
+}
+
+.chart__axis--context path,
+.chart__axis--context line {
+  display: none;
+}
+
+.chart__area {
+  fill: #FFEB3B; /* Change color */
+  stroke: #FFC107; /* Change color */
+}
+
+.extent {
+  fill: #9E9E9E; /* Change color */
+  fill-opacity: 0.3;
+}
+
+.y.axis .tick text {
+  text-anchor: start !important;
+  fill: #9E9E9E; /* Change color */
+}
+
+.y.axis .tick line {
+  display: none;
+}
+
+.y.axis path {
+  display: none;
+}
+
+#chatbot-container {
+  background-color: #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  float: left;
+  margin-left: 100px
+}
+
+#chatbox {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #abb15b;
+}
+
+#question-dropdown {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#ask-button, #reset-button {
+  background-color: #fff;
+  color: #ccc;
+  border: none;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#ask-button:hover, #reset-button:hover {
+  background-color: #fff;
+}
+
+#chat-log {
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#chat-log div {
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+#image-container {
+  margin-right: 175px; /* Adjust the margin to control the distance between chatbot and image */
+  vertical-align: top;
+  float: right; /* Align the image to the top of the container */
+  
+}
